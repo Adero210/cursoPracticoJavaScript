@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos</title>
+</head>
+<body>
+    <header>
+        <h1>Porcentajes y descuentos</h1>
+        <p>Este es el segundo taller del curso practico de JS</p>
+    </header>
+    <section>
+        <h2>Este taller calcula el precio a pagar de tus productos con descuento</h2>
+        <form action="">
+            <label for="input-price">Escribe el precio de tu producto</label>
+            <input id = "input-price" placeholder="Precio" type="number">
+            <br>
+            <label for="input-desc">Escribe el descuento</label>
+            <input id="input-desc" placeholder="Descuento" type="number">
+            <label for="">%</label>
+            <br>
+            <button id="btn-calcular" type="button" onclick="onClickButtonPriceDescount()">Calcular el precio</button>
+            <p id="result-price"></p>
+        </form>
+    </section>
+    <section>
+        <h2>Calcular descuento con codigos</h2>
+        <form action="">
+            <label for="input-price-2">Escribe el precio de tu producto</label>
+            <input id="input-price-2" placeholder="Precio" type="number">
+            <br>
+            <label for="input-codigo">Escribe el codigo</label>
+            <input id="input-codigo" placeholder="Codigo" type="text">
+            <br>
+            <label for="input-desc-2">Descuento</label>
+            <input id="input-desc-2" disabled placeholder="Descuento" type="text">
+            <label for="">%</label>
+            <br>
+            <button id="btn-calcular-2" type="button" onclick="onClickButtonPriceDescountWithCode()">Calcular el precio</button>
+            <p id="result-price-2"></p>
+        </form>
+    </section>
+    <script src="descuentos.js"></script>
+</body>
+</html>
